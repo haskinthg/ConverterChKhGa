@@ -19,7 +19,7 @@
     <v:String x:Key="Aboutlabel">Создано А.Чёлником, Д. Хрюкиным, А. Гайворонским</v:String>
 
     <v:String x:Key="Valute">Валюта</v:String>
-    <v:String x:Key="Temperature">Температура</v:String>
     <v:String x:Key="Length">Длина</v:String>
+    <v:String x:Key="Temperature">Температура</v:String>
 
 </ResourceDictionary>
