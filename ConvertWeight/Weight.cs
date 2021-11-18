@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConvertWeight
 {
+    //Конвертирует единицы длины и округляет в сторону ближайшего числа, которое находится вне нуля.
     public class Weight
     {
+        
         public static double KilometersToMiles(double Kilometers)
         {
             return Math.Round((Kilometers / 1.609344), 4, MidpointRounding.AwayFromZero);
