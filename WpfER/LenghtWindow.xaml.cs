@@ -126,7 +126,7 @@ namespace WpfER
                         else TextBox2.Text = TextBox1.Text;
                     }
 
-                    else TextBox2.Text = TextBox1.Text;
+                    //else TextBox2.Text = TextBox1.Text;
                 }
 
                 if (languag == "en-US")

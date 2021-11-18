@@ -84,15 +84,35 @@ namespace WpfER
             {
                 //if (((ComboBox1.SelectedItem as ComboBoxItem).Content != null) & ((ComboBox2.SelectedItem as ComboBoxItem).Content != null))
 
-                if (((ComboBox1.SelectedItem as ComboBoxItem).Content.ToString() == "C") &
-                ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "F"))
+                if ((ComboBox1.SelectedItem as ComboBoxItem).Content.ToString() == "C")
+                {
+
+                    if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "F")
                     TextBox2.Text = ConvertTemperature.ConvertationTemp.CtoF(Convert.ToDouble(TextBox1.Text)).ToString();
+                    else if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "K")
+                    TextBox2.Text = ConvertTemperature.ConvertationTemp.CtoK(Convert.ToDouble(TextBox1.Text)).ToString();
+                    else TextBox2.Text = TextBox1.Text;
+                }
 
-                else if (((ComboBox1.SelectedItem as ComboBoxItem).Content.ToString() == "F") &
-                ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "C"))
+                else if ((ComboBox1.SelectedItem as ComboBoxItem).Content.ToString() == "F")
+                {
+                    if((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "C")
                     TextBox2.Text = ConvertTemperature.ConvertationTemp.FtoC(Convert.ToDouble(TextBox1.Text)).ToString();
+                    else if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "K")
+                        TextBox2.Text = ConvertTemperature.ConvertationTemp.FtoK(Convert.ToDouble(TextBox1.Text)).ToString();
+                    else TextBox2.Text = TextBox1.Text;
+                }
 
-                else TextBox2.Text = TextBox1.Text;
+                else if (((ComboBox1.SelectedItem as ComboBoxItem).Content.ToString() == "K"))
+                {
+                    if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "C")
+                        TextBox2.Text = ConvertTemperature.ConvertationTemp.KtoC(Convert.ToDouble(TextBox1.Text)).ToString();
+                    else if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "F")
+                        TextBox2.Text = ConvertTemperature.ConvertationTemp.KtoF(Convert.ToDouble(TextBox1.Text)).ToString();
+                    else TextBox2.Text = TextBox1.Text;
+                }
+
+                
             }
             catch (NullReferenceException)
             {

@@ -31,6 +31,7 @@ Height="500" Width="300" ResizeMode="NoResize" WindowStyle="None" Background="Tr
                         <ComboBox x:Name="ComboBox1" Margin="0,5" Style="{StaticResource MaterialDesignComboBox}" Width="260">
                             <ComboBoxItem>C</ComboBoxItem>
                             <ComboBoxItem>F</ComboBoxItem>
+                            <ComboBoxItem>K</ComboBoxItem>
                         </ComboBox>
                         <TextBox x:Name="TextBox1" Margin="0,3" materialDesign:HintAssist.Hint="{DynamicResource tbLeg}" Style="{StaticResource MaterialDesignOutlinedTextBox }"
 materialDesign:TextFieldAssist.TextFieldCornerRadius="10" Height="50" Width="260"
@@ -39,6 +40,7 @@ materialDesign:TextFieldAssist.DecorationVisibility="Hidden" FontSize="14" TextA
                         <ComboBox x:Name="ComboBox2" Margin="0,5" Style="{StaticResource MaterialDesignComboBox}" Width="260">
                             <ComboBoxItem>C</ComboBoxItem>
                             <ComboBoxItem>F</ComboBoxItem>
+                            <ComboBoxItem>K</ComboBoxItem>
                         </ComboBox>
                         <TextBox x:Name="TextBox2" Margin="0,3" materialDesign:HintAssist.Hint="{DynamicResource tbVal2}" Style="{StaticResource MaterialDesignOutlinedTextBox }"
 materialDesign:TextFieldAssist.TextFieldCornerRadius="10" Height="50" Width="260"

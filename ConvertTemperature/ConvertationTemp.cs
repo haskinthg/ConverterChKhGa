@@ -17,5 +17,25 @@ namespace ConvertTemperature
         {
             return Math.Round((C * 1.8 + 32), 2, MidpointRounding.AwayFromZero);
         }
+
+        public static double KtoF(double K)
+        {
+            return Math.Round(((K - 273.15) * 1.8 + 32), 2, MidpointRounding.AwayFromZero);
+        }
+
+        public static double FtoK(double F)
+        {
+            return Math.Round((((F - 32) / 1.8)+273.15), 2, MidpointRounding.AwayFromZero);
+        }
+
+        public static double KtoC(double K)
+        {
+            return Math.Round((K-273.15), 2, MidpointRounding.AwayFromZero);
+        }
+
+        public static double CtoK(double C)
+        {
+            return Math.Round((C+273.15), 2, MidpointRounding.AwayFromZero);
+        }
     }
 }
