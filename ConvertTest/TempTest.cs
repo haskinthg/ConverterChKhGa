@@ -1,9 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
 using ConvertTemperature;
-using System;
 
-namespace RateTest
+namespace TempTest
 {
     [TestClass()]
     public class TempTest
