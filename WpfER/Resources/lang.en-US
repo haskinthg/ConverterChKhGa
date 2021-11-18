@@ -59,6 +59,11 @@
 	<v:String x:Key = "RateItem32">ZAR - S.African Rand</v:String >
 	<v:String x:Key = "RateItem33">KRW - South Korean Won</v:String >
 	<v:String x:Key = "RateItem34">JPY - Japanese Yen</v:String >
+
+	<v:String x:Key = "LengthItem1">Kilometers</v:String >
+	<v:String x:Key = "LengthItem2">Meters</v:String >
+	<v:String x:Key = "LengthItem3">Foots</v:String >
+	<v:String x:Key = "LengthItem4">Miles</v:String >
 	
 	
 </ResourceDictionary>
