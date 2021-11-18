@@ -23,4 +23,42 @@
 	<v:String x:Key="Length">Length</v:String>
 	<v:String x:Key="Temperature">Temperature</v:String>
 
+
+	<v:String x:Key = "RateItem0">RUB - Russian Rouble</v:String >
+	<v:String x:Key = "RateItem1">AUD - Australian Dollar</v:String >
+	<v:String x:Key = "RateItem2">AZN - Azerbaijan Manat</v:String >
+	<v:String x:Key = "RateItem3">GBP - British Pound Sterling</v:String >
+	<v:String x:Key = "RateItem4">AMD - Armenia Dram</v:String >
+	<v:String x:Key = "RateItem5">BYN - Belarussian Ruble</v:String >
+	<v:String x:Key = "RateItem6">BGN - Bulgarian lev</v:String >
+	<v:String x:Key = "RateItem7">BRL - Brazil Real</v:String >
+	<v:String x:Key = "RateItem8">HUF - Hungarian Forint</v:String >
+	<v:String x:Key = "RateItem9">HKD - Hong Kong Dollar</v:String >
+	<v:String x:Key = "RateItem10">DKK - Danish Krone</v:String >
+	<v:String x:Key = "RateItem11">USD - US Dollar</v:String >
+	<v:String x:Key = "RateItem12">EUR - Euro</v:String >
+	<v:String x:Key = "RateItem13">INR - Indian Rupee</v:String >
+	<v:String x:Key = "RateItem14">KZT - Kazakhstan Tenge</v:String >
+	<v:String x:Key = "RateItem15">CAD - Canadian Dollar</v:String >
+	<v:String x:Key = "RateItem16">KGS - Kyrgyzstan Som</v:String >
+	<v:String x:Key = "RateItem17">CNY - China Yuan</v:String >
+	<v:String x:Key = "RateItem18">MDL - Moldova Lei</v:String >
+	<v:String x:Key = "RateItem19">NOK - Norwegian Krone</v:String >
+	<v:String x:Key = "RateItem20">PLN - Polish Zloty</v:String >
+	<v:String x:Key = "RateItem21">RON - Romanian Leu</v:String >
+	<v:String x:Key = "RateItem22">XDR - SDR</v:String >
+	<v:String x:Key = "RateItem23">SGD - Singapore Dollar</v:String >
+	<v:String x:Key = "RateItem24">TJS - Tajikistan Ruble</v:String >
+	<v:String x:Key = "RateItem25">TRY - Turkish Lira</v:String >
+	<v:String x:Key = "RateItem26">TMT - New Turkmenistan Manat</v:String >
+	<v:String x:Key = "RateItem27">UZS - Uzbekistan Sum</v:String >
+	<v:String x:Key = "RateItem28">UAH - Ukrainian Hryvnia</v:String >
+	<v:String x:Key = "RateItem29">CZK - Czech Koruna</v:String >
+	<v:String x:Key = "RateItem30">SEK - Swedish Krona</v:String >
+	<v:String x:Key = "RateItem31">CHF - Swiss Franc</v:String >
+	<v:String x:Key = "RateItem32">ZAR - S.African Rand</v:String >
+	<v:String x:Key = "RateItem33">KRW - South Korean Won</v:String >
+	<v:String x:Key = "RateItem34">JPY - Japanese Yen</v:String >
+	
+	
 </ResourceDictionary>

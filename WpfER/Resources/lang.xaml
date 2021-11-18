@@ -23,4 +23,41 @@
     <v:String x:Key="Length">Длина</v:String>
     <v:String x:Key="Temperature">Температура</v:String>
 
+
+    <v:String x:Key = "RateItem0">RUB - Российский рубль</v:String >
+    <v:String x:Key = "RateItem1">AUD - Австралийский доллар</v:String >
+    <v:String x:Key = "RateItem2">AZN - Азербайджанский манат</v:String >
+    <v:String x:Key = "RateItem3">GBP - Фунт стерлингов Соединенного королевства</v:String >
+    <v:String x:Key = "RateItem4">AMD - Армянских драмов</v:String >
+    <v:String x:Key = "RateItem5">BYN - Белорусский рубль</v:String >
+    <v:String x:Key = "RateItem6">BGN - Болгарский лев</v:String >
+    <v:String x:Key = "RateItem7">BRL - Бразильский реал</v:String >
+    <v:String x:Key = "RateItem8">HUF - Венгерских форинтов</v:String >
+    <v:String x:Key = "RateItem9">HKD - Гонконгских долларов</v:String >
+    <v:String x:Key = "RateItem10">DKK - Датская крона</v:String >
+    <v:String x:Key = "RateItem11">USD - Доллар США</v:String >
+    <v:String x:Key = "RateItem12">EUR - Евро</v:String >
+    <v:String x:Key = "RateItem13">INR - Индийских рупий</v:String >
+    <v:String x:Key = "RateItem14">KZT - Казахстанских тенге</v:String >
+    <v:String x:Key = "RateItem15">CAD - Канадский доллар</v:String >
+    <v:String x:Key = "RateItem16">KGS - Киргизских сомов</v:String >
+    <v:String x:Key = "RateItem17">CNY - Китайский юань</v:String >
+    <v:String x:Key = "RateItem18">MDL - Молдавских леев</v:String >
+    <v:String x:Key = "RateItem19">NOK - Норвежских крон</v:String >
+    <v:String x:Key = "RateItem20">PLN - Польский злотый</v:String >
+    <v:String x:Key = "RateItem21">RON - Румынский лей</v:String >
+    <v:String x:Key = "RateItem22">XDR - СДР (специальные права заимствования)</v:String >
+    <v:String x:Key = "RateItem23">SGD - Сингапурский доллар</v:String >
+    <v:String x:Key = "RateItem24">TJS - Таджикских сомони</v:String >
+    <v:String x:Key = "RateItem25">TRY - Турецких лир</v:String >
+    <v:String x:Key = "RateItem26">TMT - Новый туркменский манат</v:String >
+    <v:String x:Key = "RateItem27">UZS - Узбекских сумов</v:String >
+    <v:String x:Key = "RateItem28">UAH - Украинских гривен</v:String >
+    <v:String x:Key = "RateItem29">CZK - Чешских крон</v:String >
+    <v:String x:Key = "RateItem30">SEK - Шведских крон</v:String >
+    <v:String x:Key = "RateItem31">CHF - Швейцарский франк</v:String >
+    <v:String x:Key = "RateItem32">ZAR - Южноафриканских рэндов</v:String >
+    <v:String x:Key = "RateItem33">KRW - Вон Республики Корея</v:String >
+    <v:String x:Key = "RateItem34">JPY - Японских иен</v:String >
+    
 </ResourceDictionary>

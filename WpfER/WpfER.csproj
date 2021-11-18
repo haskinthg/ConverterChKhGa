@@ -7,7 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\icoConvert.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MaterialDesignThemes" Version="4.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ConvertTemperature\ConvertTemperature.csproj" />
+    <ProjectReference Include="..\ConvertWeight\ConvertWeight.csproj" />
+    <ProjectReference Include="..\Rate\Rate.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\icoConvert.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>

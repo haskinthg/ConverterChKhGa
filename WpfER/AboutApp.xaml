@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfER.AboutApp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfER"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Height="200" Width="300" ResizeMode="NoResize" WindowStyle="None" Background="Transparent" Visibility="Visible">
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="30" />
+    </WindowChrome.WindowChrome>
+    <Grid>
+        <Border Height="200" Width="300" Background="LightGray" CornerRadius="20" IsEnabled="False"/>
+        <Button Content="{materialDesign:PackIcon WindowClose}" ToolTip = "Закрыть" Margin="10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Style="{StaticResource MaterialDesignToolButton}" Width="25" Height="25" WindowChrome.IsHitTestVisibleInChrome = "True" Click="WinClose" RenderTransformOrigin="-3.4,0.4"/>
+        <Button Content="{materialDesign:PackIcon WindowMinimize }" ToolTip = "Свернуть" Margin="30,0" VerticalAlignment="Top" HorizontalAlignment="Right" Style="{StaticResource MaterialDesignToolButton}" Width="25" Height="25" WindowChrome.IsHitTestVisibleInChrome = "True" Click="WinMin"/>
+        <Label Content="{DynamicResource btaboutProg}"  VerticalAlignment="Top" Margin="-2"  HorizontalAlignment="Center"/>
+        <Border Height="170" Margin="10" VerticalAlignment="Bottom"   Width="280" Background="White" CornerRadius="20">
+
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0" />
+            </Border.Effect>
+            <StackPanel>
+                <Image Source="Resources/icoConvert.png" Width="70" Margin="0,5,0,0" Height="45" />
+                <Label Content="{DynamicResource tbconvert}"    HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource MaterialDesignLabel}" FontWeight="Bold"/>
+                <Label Content="2021"    HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource MaterialDesignLabel}" FontWeight="Bold" FontSize="9"/>
+                <TextBlock Text="{DynamicResource Aboutlabel}" Margin="0,10,0,0" HorizontalAlignment="Center" Style="{StaticResource MaterialDesignTextBlock}" FontSize="9"/>
+                <Button Content="{DynamicResource Closetb}" Margin="13"  Style="{StaticResource MaterialDesignToolButton}" Height="20" Width="50" FontSize="10" Click="WinClose"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
