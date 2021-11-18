@@ -21,5 +21,16 @@ namespace WpfER
         {
             InitializeComponent();
         }
+        private void WinMin(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+
+        //закрыть окно
+        private void WinClose(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
     }
 }
