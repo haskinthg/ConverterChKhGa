@@ -13,7 +13,7 @@ namespace RateTest
         {
             //arrange
             Parsing.XmlToList();
-            List<int> expected = new List<int>() { 11, 0 };
+            List<int> expected = new List<int>() { 1, 0 };
             string val1 = "AUD";
             string val2 = "RUB";
             //act
