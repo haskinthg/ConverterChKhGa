@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertTemperature", "Conve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertWeight", "ConvertWeight\ConvertWeight.csproj", "{C56046A8-3B89-4FE8-A10E-694A2B340C61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfER", "WpfER\WpfER.csproj", "{88569F98-1106-4454-B2E0-22E7FAA664DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfER", "WpfER\WpfER.csproj", "{88569F98-1106-4454-B2E0-22E7FAA664DA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertTest", "ConvertTest\ConvertTest.csproj", "{5FED496B-43AD-4555-8D9E-3B6132DE6764}"
 EndProject

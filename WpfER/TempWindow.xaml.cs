@@ -84,40 +84,77 @@ namespace WpfER
             //обработчик исклчений (если вызывается исключение, то идет перенаправление в блок catch)
             try
             {
-                //проверка значения первого комбобокса
-                if ((ComboBox1.SelectedItem as ComboBoxItem).Content.ToString() == "C")
+                if (languag == "ru-RU")
                 {
-                    // проверка значения второго комбобокса 
-                    if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "F")
-                    TextBox2.Text = ConvertTemperature.ConvertationTemp.CtoF(Convert.ToDouble(TextBox1.Text)).ToString();
-                    else if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "K")
-                    TextBox2.Text = ConvertTemperature.ConvertationTemp.CtoK(Convert.ToDouble(TextBox1.Text)).ToString();
-                    else TextBox2.Text = TextBox1.Text;
+                    //проверка значения первого комбобокса
+                    if ((ComboBox1.SelectedItem as ComboBoxItem).Content.ToString() == "C (Цельсия)")
+                    {
+                        // проверка значения второго комбобокса 
+                        if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "F (Фаренгейт)")
+                            TextBox2.Text = ConvertTemperature.ConvertationTemp.CtoF(Convert.ToDouble(TextBox1.Text)).ToString();
+                        else if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "K (Кельвин)")
+                            TextBox2.Text = ConvertTemperature.ConvertationTemp.CtoK(Convert.ToDouble(TextBox1.Text)).ToString();
+                        else TextBox2.Text = TextBox1.Text;
+                    }
+
+                    //проверка значения первого комбобокса
+                    else if ((ComboBox1.SelectedItem as ComboBoxItem).Content.ToString() == "F (Фаренгейт)")
+                    {
+                        // проверка значения второго комбобокса 
+                        if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "C (Цельсия)")
+                            TextBox2.Text = ConvertTemperature.ConvertationTemp.FtoC(Convert.ToDouble(TextBox1.Text)).ToString();
+                        else if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "K (Кельвин)")
+                            TextBox2.Text = ConvertTemperature.ConvertationTemp.FtoK(Convert.ToDouble(TextBox1.Text)).ToString();
+                        else TextBox2.Text = TextBox1.Text;
+                    }
+
+                    //проверка значения первого комбобокса
+                    else if (((ComboBox1.SelectedItem as ComboBoxItem).Content.ToString() == "K (Кельвин)"))
+                    {
+                        // проверка значения второго комбобокса 
+                        if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "C (Цельсия)")
+                            TextBox2.Text = ConvertTemperature.ConvertationTemp.KtoC(Convert.ToDouble(TextBox1.Text)).ToString();
+                        else if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "F (Фаренгейт)")
+                            TextBox2.Text = ConvertTemperature.ConvertationTemp.KtoF(Convert.ToDouble(TextBox1.Text)).ToString();
+                        else TextBox2.Text = TextBox1.Text;
+                    }
                 }
 
-                //проверка значения первого комбобокса
-                else if ((ComboBox1.SelectedItem as ComboBoxItem).Content.ToString() == "F")
+                if (languag == "en-US")
                 {
-                    // проверка значения второго комбобокса 
-                    if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "C")
-                    TextBox2.Text = ConvertTemperature.ConvertationTemp.FtoC(Convert.ToDouble(TextBox1.Text)).ToString();
-                    else if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "K")
-                        TextBox2.Text = ConvertTemperature.ConvertationTemp.FtoK(Convert.ToDouble(TextBox1.Text)).ToString();
-                    else TextBox2.Text = TextBox1.Text;
-                }
+                    //проверка значения первого комбобокса
+                    if ((ComboBox1.SelectedItem as ComboBoxItem).Content.ToString() == "C (Celsius)")
+                    {
+                        // проверка значения второго комбобокса
+                        if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "F (Fahrenheit)")
+                            TextBox2.Text = ConvertTemperature.ConvertationTemp.CtoF(Convert.ToDouble(TextBox1.Text)).ToString();
+                        else if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "K (Kelvin)")
+                            TextBox2.Text = ConvertTemperature.ConvertationTemp.CtoK(Convert.ToDouble(TextBox1.Text)).ToString();
+                        else TextBox2.Text = TextBox1.Text;
+                    }
 
-                //проверка значения первого комбобокса
-                else if (((ComboBox1.SelectedItem as ComboBoxItem).Content.ToString() == "K"))
-                {
-                    // проверка значения второго комбобокса 
-                    if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "C")
-                        TextBox2.Text = ConvertTemperature.ConvertationTemp.KtoC(Convert.ToDouble(TextBox1.Text)).ToString();
-                    else if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "F")
-                        TextBox2.Text = ConvertTemperature.ConvertationTemp.KtoF(Convert.ToDouble(TextBox1.Text)).ToString();
-                    else TextBox2.Text = TextBox1.Text;
-                }
+                    //проверка значения первого комбобокса
+                    else if ((ComboBox1.SelectedItem as ComboBoxItem).Content.ToString() == "F (Fahrenheit)")
+                    {
+                        // проверка значения второго комбобокса
+                        if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "C (Celsius)")
+                            TextBox2.Text = ConvertTemperature.ConvertationTemp.FtoC(Convert.ToDouble(TextBox1.Text)).ToString();
+                        else if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "K (Kelvin)")
+                            TextBox2.Text = ConvertTemperature.ConvertationTemp.FtoK(Convert.ToDouble(TextBox1.Text)).ToString();
+                        else TextBox2.Text = TextBox1.Text;
+                    }
 
-                
+                    //проверка значения первого комбобокса
+                    else if (((ComboBox1.SelectedItem as ComboBoxItem).Content.ToString() == "K (Kelvin)"))
+                    {
+                        // проверка значения второго комбобокса
+                        if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "C (Celsius)")
+                            TextBox2.Text = ConvertTemperature.ConvertationTemp.KtoC(Convert.ToDouble(TextBox1.Text)).ToString();
+                        else if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "F (Fahrenheit)")
+                            TextBox2.Text = ConvertTemperature.ConvertationTemp.KtoF(Convert.ToDouble(TextBox1.Text)).ToString();
+                        else TextBox2.Text = TextBox1.Text;
+                    }
+                }
             }
             // при исключении вызывается окно ошибки
             catch (NullReferenceException)

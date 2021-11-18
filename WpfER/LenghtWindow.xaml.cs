@@ -174,8 +174,6 @@ namespace WpfER
                             TextBox2.Text = ConvertWeight.Weight.MilesToKilometers(Convert.ToDouble(TextBox1.Text)).ToString();
                         else TextBox2.Text = TextBox1.Text;
                     }
-
-
                 }
             }
             catch (NullReferenceException)

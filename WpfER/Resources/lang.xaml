@@ -65,4 +65,8 @@
     <v:String x:Key = "LengthItem3">Футы</v:String >
     <v:String x:Key = "LengthItem4">Мили</v:String >
 
+    <v:String x:Key="TempItem1">C (Цельсия)</v:String>
+    <v:String x:Key="TempItem2">F (Фаренгейт)</v:String>
+    <v:String x:Key="TempItem3">K (Кельвин)</v:String>
+
 </ResourceDictionary>
