@@ -1,0 +1,25 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+					xmlns:v="clr-namespace:System;assembly=mscorlib">
+
+	<v:String x:Key="BtClose">Close</v:String>
+	<v:String x:Key="BtMin">Minimize</v:String>
+	<v:String x:Key="tbconvert">Converter</v:String>
+	<v:String x:Key="btValute">Currency</v:String>
+	<v:String x:Key="btL">Length</v:String>
+	<v:String x:Key="btTemp">Temperature</v:String>
+	<v:String x:Key="btaboutProg">About</v:String>
+	<v:String x:Key="btExit">Exit</v:String>
+	<v:String x:Key="tbVal1">Enter number here</v:String>
+	<v:String x:Key="tbVal2">Result</v:String>
+	<v:String x:Key="tbLeg">Enter number here</v:String>
+	<v:String x:Key="Closetb">Close</v:String>
+	<v:String x:Key="Errorlb">Error!</v:String>
+	<v:String x:Key="LabelClear">Field (s) not filled</v:String>
+	<v:String x:Key="Aboutlabel">Made by A. Chelnik, D. Khryukin, A. Gaivoronsky</v:String>
+
+	<v:String x:Key="Valute">Currency</v:String>
+	<v:String x:Key="Temperature">Temperature</v:String>
+	<v:String x:Key="Length">Length</v:String>
+
+</ResourceDictionary>

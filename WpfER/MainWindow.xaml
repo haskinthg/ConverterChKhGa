@@ -5,8 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfER"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Height="500" Width="300" ResizeMode="NoResize" Background="Transparent" AllowsTransparency="True" WindowStyle="None">
+    <WindowChrome.WindowChrome >
+        <WindowChrome CaptionHeight="30"  />
+
+    </WindowChrome.WindowChrome>
     <Grid>
+
+        <Border Height="500" Width="300" Background="LightGray" CornerRadius="20"/>
+        <Label Content="EN              RU" Margin="17,2" Style="{StaticResource MaterialDesignLabel}"/>
+        <Button Content="{materialDesign:PackIcon WindowClose}" ToolTip = "{DynamicResource BtClose}" Margin="255,0,5,470" Style="{StaticResource MaterialDesignToolButton}" Width="25" Height="25" WindowChrome.IsHitTestVisibleInChrome = "True" Click="WinClose"/>
+        <Button Content="{materialDesign:PackIcon WindowMinimize }" ToolTip = "{DynamicResource BtMin}" Margin="190,0,0,470" Style="{StaticResource MaterialDesignToolButton}" Width="25" Height="25" WindowChrome.IsHitTestVisibleInChrome = "True" Click="WinMin"/>
+        <ToggleButton Style="{StaticResource MaterialDesignSwitchDarkToggleButton}" Margin="40,5" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" WindowChrome.IsHitTestVisibleInChrome = "True" IsChecked="True"  Unchecked="ChangeLang" Checked="ChangeLang"/>
+
+        <Border Height="460" Margin="10" VerticalAlignment="Bottom"  Width="280" Background="White" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0" />
+            </Border.Effect>
+
+            <Border VerticalAlignment="Center" HorizontalAlignment="Center">
+                <StackPanel>
+                    <TextBlock Text="{DynamicResource tbconvert}" Margin="0,10"  Width="220" Height="50" Style="{StaticResource MaterialDesignHeadline6TextBlock}" FontWeight="Bold" TextAlignment="Center"/>
+                    <Button Content="{DynamicResource btValute}" Margin="0,10"  Width="220" Height="50" Click="RateClick" materialDesign:ButtonAssist.CornerRadius="20" Cursor="Hand"/>
+                    <Button Content="{DynamicResource btL}" Margin="0,10" Width="220" Height="50" materialDesign:ButtonAssist.CornerRadius="20"  Click="LenthClick"/>
+                    <Button Content="{DynamicResource btTemp}" Margin="0,10" Width="220" Height="50" materialDesign:ButtonAssist.CornerRadius="20" Cursor="Hand" Click="TempClick"/>
+                    <Button Content="{DynamicResource btaboutProg}" Margin="0,10" Width="220" Height="50" Style="{StaticResource MaterialDesignFlatButton}" materialDesign:ButtonAssist.CornerRadius="20" Click="AboutClick"/>
+                    <Button Content="{DynamicResource btExit}" Margin="0,10" Width="200" Height="50"  Style="{StaticResource MaterialDesignFlatButton}" materialDesign:ButtonAssist.CornerRadius="20" Click="ExitClick" Cursor="Hand" />
+                </StackPanel>
+            </Border>
+
+        </Border>
 
     </Grid>
 </Window>

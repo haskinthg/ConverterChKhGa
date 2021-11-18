@@ -1,0 +1,25 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+
+    <v:String x:Key="BtClose">Закрыть</v:String>
+    <v:String x:Key="BtMin">Свернуть</v:String>
+    <v:String x:Key="tbconvert">Конвертер</v:String>
+    <v:String x:Key="btValute">Валюта</v:String>
+    <v:String x:Key="btL">Длина</v:String>
+    <v:String x:Key="btTemp">Температура</v:String>
+    <v:String x:Key="btaboutProg">О программе</v:String>
+    <v:String x:Key="btExit">Выход</v:String>
+    <v:String x:Key="tbVal1">Поле для числа</v:String>
+    <v:String x:Key="tbVal2">Результат</v:String>
+    <v:String x:Key="tbLeg">Поле для числа</v:String>
+    <v:String x:Key="Closetb">Закрыть</v:String>
+    <v:String x:Key="Errorlb">Ошибка!</v:String>
+    <v:String x:Key="LabelClear">Поле(я) не заполнено(ы)</v:String>
+    <v:String x:Key="Aboutlabel">Создано А.Чёлником, Д. Хрюкиным, А. Гайворонским</v:String>
+
+    <v:String x:Key="Valute">Валюта</v:String>
+    <v:String x:Key="Temperature">Температура</v:String>
+    <v:String x:Key="Length">Длина</v:String>
+
+</ResourceDictionary>
