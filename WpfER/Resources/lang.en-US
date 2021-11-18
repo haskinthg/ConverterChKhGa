@@ -18,6 +18,7 @@
 	<v:String x:Key="LabelClear">Field (s) not filled</v:String>
 	<v:String x:Key="Aboutlabel">Made by A. Chelnik, D. Khryukin, A. Gaivoronsky</v:String>
 
+	
 	<v:String x:Key="Valute">Currency</v:String>
 	<v:String x:Key="Length">Length</v:String>
 	<v:String x:Key="Temperature">Temperature</v:String>
