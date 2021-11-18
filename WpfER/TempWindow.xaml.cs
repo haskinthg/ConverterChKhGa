@@ -27,13 +27,13 @@ namespace WpfER
             this.TextBox1.PreviewTextInput += new TextCompositionEventHandler(textBox_PreviewTextInput);
         }
 
-        //свернуть окно
+        //сворачивание окна
         private void WinMin(object sender, RoutedEventArgs e)
         {
             WindowState = WindowState.Minimized;
         }
 
-        //закрыть окно
+        //закрытие окна
         private void WinClose(object sender, RoutedEventArgs e)
         {
             Close();
@@ -46,7 +46,7 @@ namespace WpfER
             TextBox1.Text += ((Button)sender).Name[1];
         }
 
-        //смена языка переключателем
+        //смена языка | если вкл кнопка, то рус, если выкл, то англ
         private void ChangeLang(object sender, RoutedEventArgs e)
         {
             if (((ToggleButton)sender).IsChecked == true)
@@ -61,7 +61,7 @@ namespace WpfER
                 }
             }
         }
-        //ввод только цифр
+        //ввод только цифр и запятой
         void textBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             if ((!Char.IsNumber(e.Text, 0)) && (e.Text != ",")) e.Handled = true;
@@ -70,6 +70,7 @@ namespace WpfER
 
         }
 
+        // очистка полей текстбоксов
         private void ClearBox(object sender, RoutedEventArgs e)
         {
             TextBox1.Clear();
@@ -77,16 +78,16 @@ namespace WpfER
         }
 
 
-
+        //метод для расчета результата
         private void ResultClick(object sender, RoutedEventArgs e)
         {
+            //обработчик исклчений (если вызывается исключение, то идет перенаправление в блок catch)
             try
             {
-                //if (((ComboBox1.SelectedItem as ComboBoxItem).Content != null) & ((ComboBox2.SelectedItem as ComboBoxItem).Content != null))
-
+                //проверка значения первого комбобокса
                 if ((ComboBox1.SelectedItem as ComboBoxItem).Content.ToString() == "C")
                 {
-
+                    // проверка значения второго комбобокса 
                     if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "F")
                     TextBox2.Text = ConvertTemperature.ConvertationTemp.CtoF(Convert.ToDouble(TextBox1.Text)).ToString();
                     else if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "K")
@@ -94,17 +95,21 @@ namespace WpfER
                     else TextBox2.Text = TextBox1.Text;
                 }
 
+                //проверка значения первого комбобокса
                 else if ((ComboBox1.SelectedItem as ComboBoxItem).Content.ToString() == "F")
                 {
-                    if((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "C")
+                    // проверка значения второго комбобокса 
+                    if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "C")
                     TextBox2.Text = ConvertTemperature.ConvertationTemp.FtoC(Convert.ToDouble(TextBox1.Text)).ToString();
                     else if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "K")
                         TextBox2.Text = ConvertTemperature.ConvertationTemp.FtoK(Convert.ToDouble(TextBox1.Text)).ToString();
                     else TextBox2.Text = TextBox1.Text;
                 }
 
+                //проверка значения первого комбобокса
                 else if (((ComboBox1.SelectedItem as ComboBoxItem).Content.ToString() == "K"))
                 {
+                    // проверка значения второго комбобокса 
                     if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "C")
                         TextBox2.Text = ConvertTemperature.ConvertationTemp.KtoC(Convert.ToDouble(TextBox1.Text)).ToString();
                     else if ((ComboBox2.SelectedItem as ComboBoxItem).Content.ToString() == "F")
@@ -114,6 +119,7 @@ namespace WpfER
 
                 
             }
+            // при исключении вызывается окно ошибки
             catch (NullReferenceException)
             {
                 WpfER.Error error = new WpfER.Error();
